@@ -17,7 +17,7 @@ public class BaseTest {
     public void startUp() {
         WebDriverManager.chromedriver().setup();
         driver = new ChromeDriver();
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3));
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
         logger.info("Драйвер поднят");
     }
 
